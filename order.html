@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <header>
+        <h1>Formulario de Pedido</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="about.html">Nosotros</a> |
+            <a href="menu.html">Menú</a> |
+            <a href="pizza_detail.html">Detalle de pizza</a> |
+            <a href="order.html">Pedidos</a> |
+            <a href="promotions.html">Promociones</a> |
+            <a href="gallery.html">Galería</a> |
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+            <p>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p>
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion" required>
+            </p>
+
+            <fieldset>
+                <legend>Tamaño de la pizza</legend>
+
+                <input type="radio" id="pequena" name="tamano"
+                       value="pequena" required>
+                <label for="pequena">Pequeña</label><br>
+
+                <input type="radio" id="mediana" name="tamano"
+                       value="mediana">
+                <label for="mediana">Mediana</label><br>
+
+                <input type="radio" id="grande" name="tamano"
+                       value="grande">
+                <label for="grande">Grande</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Ingredientes adicionales</legend>
+
+                <input type="checkbox" id="queso" name="ingredientes"
+                       value="queso">
+                <label for="queso">Queso extra</label><br>
+
+                <input type="checkbox" id="pepperoni" name="ingredientes"
+                       value="pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+
+                <input type="checkbox" id="champinones" name="ingredientes"
+                       value="champinones">
+                <label for="champinones">Champiñones</label><br>
+
+                <input type="checkbox" id="aceitunas" name="ingredientes"
+                       value="aceitunas">
+                <label for="aceitunas">Aceitunas</label>
+            </fieldset>
+
+            <p>
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" name="cantidad"
+                       min="1" required>
+            </p>
+
+            <p>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios"
+                          rows="2" cols="25"></textarea>
+            </p>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Liru pizza</p>
+    </footer>
+</body>
+</html>
